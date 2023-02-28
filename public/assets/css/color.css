@@ -16,7 +16,7 @@ footer.footer-two .contact-info a:hover,.volunteer-for h3,.news-article-one h3:h
 .footer-bootom-bar.fore .wpo-lower-footer a,.recent-posts li h6 a:hover,.get-involved i,
 .contact-info a:hover,.recent-causes-data h3:hover,.testimonial .start i,.gifts-data h5:hover,
 .news-article-two a h3:hover,.footer-bootom-bar.fore .wpo-lower-footer i,
-footer.footer-two .wpo-lower-footer i,nav ul ul li a:hover,body.drak-mode .gifts-data h6{
+footer.footer-two .wpo-lower-footer i,nav ul ul li a:hover,body.drak-mode .gifts-data h6, .p-4 a:hover{
    
     color: hsl(122, 94%, 50%);
 
@@ -40,7 +40,7 @@ button.error-button:hover,.event-details-text .upcoming-event-time,.fun-facts-st
 .enter-your-information input.give-submit,
 .recent-causes-urgent .progress-bar,.give-donation-level-btn:hover,
 ul.categories li a:hover span,
-.article h4,ul.social-media i,.recent-causes-data .progress-bar,.footer-from button{
+.article h4,ul.social-media i,.recent-causes-data .progress-bar,.footer-from button, .blog-img a{
 
     background-color:hsl(122, 94%, 50%) ;
 

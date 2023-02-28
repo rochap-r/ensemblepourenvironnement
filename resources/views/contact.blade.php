@@ -10,21 +10,21 @@
     <section class="page-title-area" style="background-image:url(https://via.placeholder.com/1920x430)">
         <div class="container">
           <div class="title-area-data">
-            <h2>contact Us</h2>
-            <p>Organisations committed to ending poverty worldwide.</p>
+            <h2>Contactez-nous</h2>
+            <p>Organisations engagées pour mettre fin au rechaufement climatique dans le monde.</p>
           </div>
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="index.html">Home</a>
+              <a href="{{ route('home')}}">Home</a>
             </li>
-              <li class="breadcrumb-item active" aria-current="page">contact us</li>
+              <li class="breadcrumb-item active" aria-current="page">Contactez-nous</li>
           </ol>
         </div>
       </section>
       <section class="gap">
         <div class="container">
           <div class="row">
-            <div class="col-xl-4 col-md-6">
+            <div class="col-xl-3 col-md-6">
               <div class="get-involved data contact">
                   <i>
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -41,28 +41,26 @@
                         C494.3,365.039,512.01,311.895,512,255.954C511.988,187.393,485.406,123.064,437.15,74.817z"/>
                     </svg>
                   </i>
-                  <h3>Phone No</h3>
-                  <h6>Phone:<a href="callto:(732)987-0103">(732) 987-01 03</a></h6>
-                  <h6>Fax:<a href="callto:(732)987-0103">(123) 123-45 67</a></h6>
+                  <h3>Téléphone</h3>
+                  <h6><a href="callto:+243 992522582">+243 992522582</a></h6>
               </div>
             </div>
-            <div class="col-xl-4 col-md-6">
+            <div class="col-xl-5 col-md-6">
               <div class="get-involved data contact">
                   <i>
                     <svg height="512" viewBox="0 0 32 32" width="512" xmlns="http://www.w3.org/2000/svg"><g id="Layer_34" data-name="Layer 34"><path d="m30 9v14a3 3 0 0 1 -3 3h-22a3 3 0 0 1 -3-3v-14a2.87 2.87 0 0 1 .19-1l12.15 8.1a3 3 0 0 0 3.32 0l12.15-8.1a2.87 2.87 0 0 1 .19 1zm-13.45 5.43 12-8a3 3 0 0 0 -1.55-.43h-22a3 3 0 0 0 -1.54.44l12 8a1 1 0 0 0 1.09-.01z"/></g></svg>
                   </i>
-                  <h3>Email Id</h3>
-                  <h6><a href="mailto:namedomain@domain.com">namedomain@domain.com</a></h6>
-                  <h6><a href="mailto:Charitydomain@domain.com">Charitydomain@domain.com</a></h6>
-              </div>
+                  <h3>E-mail</h3>
+                  <h6><a href="mailto:info@ensemblepourenvironnement.com">info@ensemblepourenvironnement.com</a></h6>
+                  </div>
             </div>
             <div class="col-xl-4 col-md-6">
               <div class="get-involved data contact">
                   <i>
                     <svg height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m12 22c-.3632813 0-.6972656-.1967773-.8740234-.5141602l-2.3066406-4.1518555c-2.897461-1.2597655-4.819336-4.1606445-4.819336-7.3339843 0-4.4111328 3.5888672-8 8-8s8 3.5888672 8 8c0 3.1733398-1.921875 6.0742188-4.8193359 7.3339844l-2.3066406 4.1518555c-.1767579.3173828-.5107422.5141601-.8740235.5141601zm0-18c-3.3085938 0-6 2.6914063-6 6 0 2.4736328 1.5576172 4.7265625 3.8769531 5.605957.2207031.0839844.4052734.2431641.5195313.4492188l1.6035156 2.8857422 1.6035156-2.8857422c.1142578-.2060547.2988281-.3652344.5195313-.4492188 2.3193359-.8793945 3.8769531-3.1323242 3.8769531-5.605957 0-3.3085937-2.6914062-6-6-6zm0 9c-1.6542969 0-3-1.3457031-3-3s1.3457031-3 3-3 3 1.3457031 3 3-1.3457031 3-3 3zm0-4c-.5517578 0-1 .4487305-1 1s.4482422 1 1 1 1-.4487305 1-1-.4482422-1-1-1z"/></g></svg>
                   </i>
-                  <h3>Address</h3>
-                  <h6>Street No 12 Honolulu, Huwaii 10 Avenue United State.</h6>
+                  <h3>Adresse Physique</h3>
+                  <h6>Av/Du30/Juin, Q/Latin, KZI</h6>
               </div>
             </div>
           </div>
@@ -71,26 +69,20 @@
       <section class="contact-form">
         <div class="container">
           <div class="heading">
-            <p>If you have any questions</p>
-            <h2>Don't be a stranger just say hello.</h2>
+            <p>Si vous avez des questions</p>
+            <h2>Ne sois pas un étranger dis juste bonjour.</h2>
           </div>
           <div class="dont-stranger">
-      
             <div class="row">
-              <div class="col-lg-6">
-                <div class="contact-map">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.27988761215!2d-74.25986708594112!3d40.69767006828117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1670920528913!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
-              </div>
-              <div class="col-lg-6">
+              <div class="offset-3 col-lg-8">
                 <div class="comment p-0">
                         <form class="leave-comment">
-                          <input type="text" name="name" placeholder="Complete Name">
-                          <input type="text" name="Email" placeholder="Email Address">
-                          <input type="text" name="Phone" placeholder="Phone No">
-                          <textarea placeholder="Question"></textarea>
+                          <input type="text" name="name" placeholder="Nom complet">
+                          <input type="text" name="Email" placeholder="Adresse e-mail">
+                          <input type="text" name="Phone" placeholder="Pas de téléphone">
+                          <textarea placeholder="Message"></textarea>
                           <button class="btn">
-                            <span>Send Message</span>
+                            <span>Envoyer le message</span>
                           </button>
                         </form>
                       </div>
@@ -99,26 +91,4 @@
           </div>
         </div>
       </section>
-      <div class="clients-logo gap">
-            <div class="container">
-              <div class="logodata owl-carousel owl-theme">
-                <div class="partner item">
-                  <img alt="clients-logo" src="https://via.placeholder.com/194x90">
-                </div>
-                <div class="partner item">
-                  <img alt="clients-logo" src="https://via.placeholder.com/194x90">
-                </div>
-                <div class="partner item">
-                  <img alt="clients-logo" src="https://via.placeholder.com/194x90">
-                </div>
-                <div class="partner item">
-                  <img alt="clients-logo" src="https://via.placeholder.com/194x90">
-                </div>
-                <div class="partner item">
-                  <img alt="clients-logo" src="https://via.placeholder.com/194x90">
-                </div>
-              </div>
-            </div>
-        </div>
-
 @endsection

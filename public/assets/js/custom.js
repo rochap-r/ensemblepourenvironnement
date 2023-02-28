@@ -414,13 +414,13 @@ let lightmode = localStorage.getItem('drak-mode');
     const enableLightMode = () => {
         document.body.classList.add('drak-mode');
         localStorage.setItem('drak-mode', 'enabled');
-        lightmodeToggle.src = 'assets/img/moon.png';
+        lightmodeToggle.src = '/assets/img/moon.png';
     }
     
     const disablelightmode = () => {
         document.body.classList.remove('drak-mode');
         localStorage.setItem('drak-mode', null);
-        lightmodeToggle.src = 'assets/img/sun.png';
+        lightmodeToggle.src = '/assets/img/sun.png';
     }
 
     if (lightmode === 'enabled') {

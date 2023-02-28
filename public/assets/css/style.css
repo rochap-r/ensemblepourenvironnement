@@ -244,6 +244,11 @@ figure {
     justify-content: center;
     position: relative;
 }
+.logo img{
+    width: 90%;
+    position: relative;
+}
+
 .logo-menu {
     background-color: white;
     margin-top: -50px;
@@ -262,7 +267,7 @@ figure {
     width: 1px;
     background-color: #aeaeae;
     right: 2%;
-    top: 10%;
+    top: 28%;
 }
 
 /* 2. nav */
@@ -2466,7 +2471,7 @@ footer.footer-two .wpo-lower-footer .boder {
     bottom: -14%;
 }
 .circle.three:before {
-    content: "Donated";
+    content: "Dons";
     left: 24%;
 }
 .circle.three canvas {
@@ -2480,7 +2485,7 @@ footer.footer-two .wpo-lower-footer .boder {
     font-size: 40px;
 }
 .circle.three:before {
-    content: "Donated";
+    content: "Dons";
     left: 19%;
     top: 50%;
 }
@@ -5292,7 +5297,8 @@ li.menu-item-has-children.active {
 .bar-menu i {
     color: black;
     background-color: transparent;
-    font-size: 24px;
+    font-size: 40px;
+    margin-left: 10px;
 }
 .responsive-bar-slider {
     display: flex;

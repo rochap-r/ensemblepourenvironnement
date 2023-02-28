@@ -2,7 +2,7 @@
 @extends('layouts.main')
 
     <!-- title section -->
-    @section('title','Home')
+    @section('title')
 
     <!-- content section -->
     @section('content')
@@ -13,10 +13,9 @@
             <div class="row">
               <div class="col-lg-7">
                 <div class="home-life">
-                  <h1>Home is Life</h1>
-                  <h4>We build strength, stability, and self 
-                          reliance through shelter. </h4>
-                          <a href="donation-page.html" class="btn"><span>Donate Now</span></a>
+                  <h1>Protection des plantes</h1>
+                  <h4>Protegeons les plantes, en ne les detruisant pas. </h4>
+                          <a href="" class="btn"><span>Faire un don</span></a>
                 </div>
               </div>
             </div>
@@ -27,9 +26,9 @@
             <div class="row">
               <div class="col-lg-7">
                 <div class="home-life">
-                  <h1>Help for orphans</h1>
-                  <h4>One Of The Biggest Risk Factors Involved In Family Separation.</h4>
-                          <a href="donation-page.html" class="btn"><span>Donate Now</span></a>
+                  <h1>Plantation des arbres</h1>
+                  <h4>Evitons le changement climatique en plantant les arbres.</h4>
+                          <a href="" class="btn"><span>Faire un don</span></a>
                 </div>
               </div>
             </div>
@@ -40,9 +39,9 @@
             <div class="row">
               <div class="col-lg-7">
                 <div class="home-life">
-                  <h1>sponsor an orphan</h1>
-                  <h4>One Of The Biggest Risk Factors Involved In Family Separation.</h4>
-                          <a href="donation-page.html" class="btn"><span>Donate Now</span></a>
+                  <h1>Lutte contre la deforrestation</h1>
+                  <h4>Luttons contre la destruction de la foret car elle detruit toute la nature.</h4>
+                          <a href="" class="btn"><span>Faire un don</span></a>
                 </div>
               </div>
             </div>
@@ -53,9 +52,9 @@
             <div class="row">
               <div class="col-lg-7">
                 <div class="home-life">
-                  <h1>Educational Needs</h1>
-                  <h4>The woman approaches the camera till we see a close up of her face</h4>
-                          <a href="donation-page.html" class="btn"><span>Donate Now</span></a>
+                  <h1>Education Environnementale</h1>
+                  <h4>Savoir l'importance de la nature nous permet d'accorder une grande valeur à celle-ci</h4>
+                          <a href="" class="btn"><span>Faire un don</span></a>
                 </div>
               </div>
             </div>
@@ -128,9 +127,9 @@
                                id="path3106" /></g></g></g></g>
                   </svg>
                 </i>
-                <h3>Volunteer</h3>
-                <p>Join your hand with us for a better life and future.</p>
-                <a href="contact.html">Register Now</a>
+                <h3>Bénévole</h3>
+                <p>Joignez-vous à nous pour une vie et un avenir meilleurs.</p>
+                <a href="contact.html">S'inscrire maintenant</a>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
@@ -191,9 +190,9 @@
                                id="path1647" /></g></g></g></g>
                     </svg>
                 </i>
-                <h3>Donation</h3>
-                <p>Supported by community leaders, corporate sponsors, churches.</p>
-                <a href="donation-page.html">Donate Now</a>
+                <h3>Don</h3>
+                <p>Soutenu par des dirigeants communautaires, des entreprises commanditaires, et autres.</p>
+                <a href="donation-page.html">Faire un don</a>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
@@ -252,9 +251,9 @@
                              id="path49" /></g></g></g>
                 </svg>
                 </i>
-                <h3>Fundraise</h3>
-                <p>Charity nonproﬁt organization a supported by community</p>
-                <a href="cause-details.html">Read More</a>
+                <h3>Collecte de fonds</h3>
+                <p>Organisation caritative à but non lucratif soutenue par la communauté</p>
+                <a href="cause-details.html">En savoir plus</a>
               </div>
             </div>
           </div>
@@ -264,8 +263,8 @@
         <div class="container">
           <div class="heading">
             <img alt="icon" src="assets/img/logo-icon.png">
-            <p>welcome to foundation.</p>
-            <h2>We Help Poor Children to Get Life Better.</h2>
+            <p>Bienvenue à l'ONG EPE.</p>
+            <h2>Nous assurons un avenir meilleur en protegeant la nature.</h2>
           </div>
           <div class="row align-items-center">
             <div class="col-lg-6">
@@ -275,7 +274,7 @@
                   <figure>
                   <img alt="man" class="w-100" src="{{ asset('images/416x406.png')}}">
                 </figure>
-                  <h5>We help more than 23k children every year</h5>
+                  <h5>La nature est notre point focal</h5>
                 </div>
               </div>
               <div class="col-4">
@@ -297,11 +296,11 @@
                     dolor sit amet, consect etur adipiscing elit.
                 </p>
                 <ul>
-                  <li><div class="bol"></div>Creating brands people trust.</li>
-                  <li><div class="bol"></div>Helping charities and non-profits to do good</li>
-                  <li><div class="bol"></div>what you do best, changing the world</li>
+                  <li><div class="bol"></div>Faire un travail auxquel les gens font confiance.</li>
+                  <li><div class="bol"></div>Aider les organismes sans but lucratif à assurer un avenir</li>
+                  <li><div class="bol"></div>Ce que tu fais de mieux, change le monde</li>
                 </ul>
-                <a href="about.html" class="btn"><span>Learn More</span></a>
+                <a href="about.html" class="btn"><span>Apprendre encore plus</span></a>
               </div>
             </div>
           </div>
@@ -313,32 +312,32 @@
             <div class="col-lg-4 col-md-6">
               <div class="nonprofit">
                 <img alt="shaps" src="assets/img/shaps-1.png">
-                <p>Nonprofit partners create access to opportunities for </p>
+                <p>Les partenaires à but non lucratif créent l'accès à la plantation de </p>
                 <div class="justify-content-center d-flex align-items-center">
                   <div id="odometer" class="odometer odometer1" data-id="200000">0</div>
                   <span>+</span>
                 </div>
-                <h6>Youth Each Year</h6>
+                <h6>Jeunes Plantes</h6>
               </div>
             </div>
             <div class="col-lg-4 col-md-6">
               <div class="nonprofit">
                 <img alt="shaps" src="assets/img/shaps-2.png">
-                <p>Our Partners build the social emotional learning</p>
+                <p>Nos partenaires construisent l'apprentissage environnemental</p>
                 <div class="justify-content-center d-flex align-items-center">
                   <div id="odometer2" class="odometer odometer2" data-id="100">0</div><span>M</span>
                 </div>
-                  <h6>of young people served</h6>
+                  <h6>de Projets</h6>
               </div>
             </div>
             <div class="col-lg-4 col-md-6">
               <div class="nonprofit">
                 <img alt="shaps" src="assets/img/shaps-3.png">
-                <p>Investing in Generates an 11x return, producing</p>
+                <p>Investir dans la nature Génère un rendement, protegeant</p>
                 <div class="justify-content-center d-flex align-items-center">
                   <span>$</span><div id="odometer3" class="odometer odometer3" data-id="1">0</div><span>B+</span>
                 </div>
-                  <h6>in impact since inception</h6>
+                  <h6>d'etres humains</h6>
               </div>
             </div>
           </div>
@@ -348,8 +347,8 @@
         <div class="container">
           <div class="heading">
             <img alt="icon" src="assets/img/logo-icon.png">
-            <p>working on charity</p>
-            <h2>Recent Causes</h2>
+            <p>travailler sur la Nature</p>
+            <h2>Causes récentes</h2>
           </div>
           <div class="zoom-slider owl-carousel">
             <div class="item recent-causes">
@@ -357,17 +356,17 @@
               <i class="fa-solid fa-bolt"></i>
               <div class="recent-causes-data">
                 <a href="cause-details.html">
-                  <h3>Providing access to safe water, sanitation</h3>
+                  <h3>Garantir une vie meileur dans l'avenir</h3>
                 </a>
-                <p>Lorem ipsum dolor sit amet, consectetur a dipiscing elit Vivamus in magna.</p>
+                <p>La Nature est le socle d'un evitement du desastre environnemental</p>
                 <div class="progress">
                   <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="goal">
-                  <span>Goal: $190000</span>
-                  <span>Raised: $80000</span>
+                  <span>Objectif: 190 000 $</span>
+                  <span>Récolté : 80 000 $</span>
                 </div>
-                <a href="donation-page.html" class="btn two mt-3"><span>Donate Now</span></a>
+                <a href="donation-page.html" class="btn two mt-3"><span>Faire un Don</span></a>
               </div>
             </div>
             <div class="item recent-causes">
@@ -375,17 +374,17 @@
               <i class="fa-solid fa-bolt"></i>
               <div class="recent-causes-data">
                 <a href="cause-details.html">
-                  <h3>Providing access to safe water, sanitation</h3>
+                  <h3>Protection la faune et la flore</h3>
                 </a>
-                <p>Lorem ipsum dolor sit amet, consectetur a dipiscing elit Vivamus in magna.</p>
+                <p>Nous nous battons pour atteindre les objectifs d'un avenir meilleur.</p>
                 <div class="progress">
                   <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="goal">
-                  <span>Goal: $190000</span>
-                  <span>Raised: $80000</span>
+                  <span>Objectif: 100 000 $</span>
+                  <span>Récolté : 50 000 $</span>
                 </div>
-                <a href="donation-page.html" class="btn two mt-3"><span>Donate Now</span></a>
+                <a href="donation-page.html" class="btn two mt-3"><span>Faire un Don</span></a>
               </div>
             </div>
             <div class="item recent-causes">
@@ -393,17 +392,17 @@
               <i class="fa-solid fa-bolt"></i>
               <div class="recent-causes-data">
                 <a href="cause-details.html">
-                  <h3>Providing access to safe water, sanitation</h3>
+                  <h3>Garantir une vie meileur dans l'avenir</h3>
                 </a>
-                <p>Lorem ipsum dolor sit amet, consectetur a dipiscing elit Vivamus in magna.</p>
+                <p>Nous nous battons pour atteindre les objectifs d'un avenir meilleur.</p>
                 <div class="progress">
                   <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="goal">
-                  <span>Goal: $190000</span>
-                  <span>Raised: $80000</span>
+                  <span>Objectif: 100 000 $</span>
+                  <span>Récolté : 50 000 $</span>
                 </div>
-                <a href="donation-page.html" class="btn two mt-3"><span>Donate Now</span></a>
+                <a href="donation-page.html" class="btn two mt-3"><span>Faire un Don</span></a>
               </div>
             </div>
             <div class="item recent-causes">
@@ -411,17 +410,17 @@
               <i class="fa-solid fa-bolt"></i>
               <div class="recent-causes-data">
                 <a href="cause-details.html">
-                  <h3>Providing access to safe water, sanitation</h3>
+                  <h3>Protection la faune et la flore</h3>
                 </a>
-                <p>Lorem ipsum dolor sit amet, consectetur a dipiscing elit Vivamus in magna.</p>
+                <p>Nous nous battons pour atteindre les objectifs d'un avenir meilleur.</p>
                 <div class="progress">
                   <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div class="goal">
-                  <span>Goal: $190000</span>
-                  <span>Raised: $80000</span>
+                  <span>Objectif: 100 000 $</span>
+                  <span>Récolté : 50 000 $</span>
                 </div>
-                <a href="donation-page.html" class="btn two mt-3"><span>Donate Now</span></a>
+                <a href="" class="btn two mt-3"><span>Faire un Don</span></a>
               </div>
             </div>
           </div>
@@ -432,17 +431,16 @@
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div class="homeless">
-                <h2>35,123 Kids Homeless <span>Reached So Far!</span></h2>
-                <h6>Duis sed odio sit amet nibh vulputate cursus a amet accu
-                    msan ipsuy veli Nam nec tellus a odio tincidunt it con nec 
-                    tellus a odio sequat auctor.</h6>
+                <h2>10M d'arbres<span> dejà prets pour l'environment!</span></h2>
+                <h6>Nous faisons de la plantation d'arbres notre projet de premier plan car 
+                  c'est le centre nevralgique du climat.</h6>
                     <div class="d-flex">
                       <div>
-                        <h5>Raised<span>
-                          $8,100</span></h5>
+                        <h5>Récolté<span>
+                          8,100$</span></h5>
                         <div class="separator"></div>
-                        <h5>Goal<span>
-                          $26,500</span></h5>
+                        <h5>objectifs<span>
+                          26,500$</span></h5>
                       </div>
                       <div class="progressbar">
                         <div class="circle three" data-percent="75">
@@ -454,49 +452,49 @@
             </div>
             <div class="col-lg-6">
               <div class="please-donate-today">
-                <h2>Please Donate Today!</h2>
-                <p>How often you want to donate ?</p>
+                <h2>Veuillez faire un don aujourd'hui!</h2>
+                <p>À quelle fréquence voulez-vous faire un don ?</p>
                 <form class="donate-form">
                   <ul class="d-flex">
                     <li>
                       <input type="radio" id="Weekly" name="fav_language" value="Weekly">
-                      <label for="Weekly">Weekly</label>
+                      <label for="Weekly">Hebdomadaire</label>
                     </li>
                     <li>
                       <input type="radio" id="Monthly" name="fav_language" value="Monthly">
-                      <label for="Monthly">Monthly</label>
+                      <label for="Monthly">Mensuelle</label>
                     </li>
                     <li>
                       <input type="radio" id="Yearly" name="fav_language" value="Yearly">
-                      <label for="Yearly">Yearly</label>
+                      <label for="Yearly">Annuelle</label>
                     </li>
                   </ul>
-                  <h6>How much to donate?</h6>
+                  <h6>Combien donner ?</h6>
                   <span class="give-currency-symbol">$</span>
                   <input class="donated_amount give-text-input" name="give-amount" type="text" >
                   <ul class="give-donation-levels-wrap">
                     <li>
-                      <a class="donating give-donation-level-btn" href="JavaScript:void(0)">$<span class="donation_amount">10</span>
+                      <a class="donating give-donation-level-btn" href="JavaScript:void(0)"><span class="donation_amount">10</span>$
                       </a>
                     </li>
                     <li>
-                      <a class="donating give-donation-level-btn" href="JavaScript:void(0)">$<span class="donation_amount">20</span>
+                      <a class="donating give-donation-level-btn" href="JavaScript:void(0)"><span class="donation_amount">20</span>$
                       </a>
                     </li>
                     <li>
-                      <a class="donating give-donation-level-btn" href="JavaScript:void(0)">$<span class="donation_amount">50</span>
+                      <a class="donating give-donation-level-btn" href="JavaScript:void(0)"><span class="donation_amount">50</span>$
                       </a>
                     </li>
                     <li>
-                      <a class="donating give-donation-level-btn" href="JavaScript:void(0)">$<span class="donation_amount">100</span>
+                      <a class="donating give-donation-level-btn" href="JavaScript:void(0)"><span class="donation_amount">100</span>$
                       </a>
                     </li>
                     <li>
-                      <a class="donating give-donation-level-btn" href="JavaScript:void(0)">$<span class="donation_amount">200</span>
+                      <a class="donating give-donation-level-btn" href="JavaScript:void(0)"><span class="donation_amount">200</span>$
                       </a>
                     </li>
-                    <li><button type="button" class="give-donation-level-btn give-btn give-btn-level-custom" value="custom">Custom Amount</button></li></ul>
-                    <input type="submit" class="give-submit" name="give-purchase" value="Donate Now">
+                    <li><button type="button" class="give-donation-level-btn give-btn give-btn-level-custom" value="custom">Montant personnalisé</button></li></ul>
+                    <input type="submit" class="give-submit" name="give-purchase" value="Faire un Don">
                 </form>
               </div>
             </div>
@@ -506,9 +504,9 @@
       <section class="gap">
         <div class="container">
           <div class="heading">
-            <img alt="icon" src="assets/img/logo-icon.png">
-            <p>working on charity</p>
-            <h2>Upcoming Events</h2>
+            <img alt="icon" src="{{ asset('assets/img/logo-icon.png') }}">
+            <p>travailler avec notre ONG </p>
+            <h2>Evènements à venir</h2>
           </div>
           <div class="row">
             <div class="col-xl-4 col-lg-6">
@@ -518,14 +516,14 @@
                 </figure>
                 <a href="event-details.html"><i class="fa-solid fa-angle-right"></i></a>
                 <div class="upcoming-event-time">
-                  <h4>27<span>Jul<br>2023</span></h4>
+                  <h4>27<span>JUIL<br>2023</span></h4>
                   <div class="upcoming-event-separator"></div>
-                  <h4>30<span>sep<br>2023</span></h4>
+                  <h4>30<span>SEP<br>2023</span></h4>
                 </div>
                 <div class="upcoming-event-data">
-                  <a href="event-details.html"><h4>Trustee Leadership Programe Spring 2023</h4></a>
-                  <h6 class="pb-2"><i class="fa-solid fa-clock pe-3"></i>1:00 pm - 1:00 pm </h6>
-                  <h6><i class="fa-solid fa-location-dot pe-3"></i>Manchester, Kentucky 39495, USA</h6>
+                  <a href="event-details.html"><h4>Programme de leadership des administrateurs printemps 2023</h4></a>
+                  <h6 class="pb-2"><i class="fa-solid fa-clock pe-3"></i>8h00 - 13h00 </h6>
+                  <h6><i class="fa-solid fa-location-dot pe-3"></i>Kolwezi, Kasongo 45, RDC</h6>
                 </div>
               </div>
             </div>
@@ -536,14 +534,14 @@
                 </figure>
                 <a href="event-details.html"><i class="fa-solid fa-angle-right"></i></a>
                 <div class="upcoming-event-time">
-                  <h4>27<span>Jul<br>2023</span></h4>
+                  <h4>27<span>JUIN<br>2023</span></h4>
                   <div class="upcoming-event-separator"></div>
-                  <h4>30<span>sep<br>2023</span></h4>
+                  <h4>30<span>OCT<br>2023</span></h4>
                 </div>
                 <div class="upcoming-event-data">
-                  <a href="event-details.html"><h4>Trustee Leadership Programe Spring 2023</h4></a>
-                  <h6 class="pb-2"><i class="fa-solid fa-clock pe-3"></i>1:00 pm - 1:00 pm </h6>
-                  <h6><i class="fa-solid fa-location-dot pe-3"></i>Manchester, Kentucky 39495, USA</h6>
+                  <a href="event-details.html"><h4>Programme de leadership des administrateurs printemps 2023</h4></a>
+                  <h6 class="pb-2"><i class="fa-solid fa-clock pe-3"></i>7h00 - 13h00 </h6>
+                  <h6><i class="fa-solid fa-location-dot pe-3"></i>Kolwezi, Kakese 45, RDC</h6>
                 </div>
               </div>
             </div>
@@ -554,14 +552,14 @@
                 </figure>
                 <a href="event-details.html"><i class="fa-solid fa-angle-right"></i></a>
                 <div class="upcoming-event-time">
-                  <h4>27<span>Jul<br>2023</span></h4>
+                  <h4>27<span>JUIL<br>2023</span></h4>
                   <div class="upcoming-event-separator"></div>
-                  <h4>30<span>sep<br>2023</span></h4>
+                  <h4>30<span>SEP<br>2023</span></h4>
                 </div>
                 <div class="upcoming-event-data">
-                  <a href="event-details.html"><h4>Trustee Leadership Programe Spring 2023</h4></a>
-                  <h6 class="pb-2"><i class="fa-solid fa-clock pe-3"></i>1:00 pm - 1:00 pm </h6>
-                  <h6><i class="fa-solid fa-location-dot pe-3"></i>Manchester, Kentucky 39495, USA</h6>
+                  <a href="event-details.html"><h4>Programme de leadership des administrateurs printemps 2023</h4></a>
+                  <h6 class="pb-2"><i class="fa-solid fa-clock pe-3"></i>10h00 - 13h00 </h6>
+                  <h6><i class="fa-solid fa-location-dot pe-3"></i>Kolwezi, Kasongo 45, RDC</h6>
                 </div>
               </div>
             </div>
@@ -574,16 +572,16 @@
             <div class="col-xl-5 col-lg-12">
               <div class="change-we-need">
                 <div class="heading two">
-                  <p>join the right cause</p>
-                  <h2>Change We Need to Make Happen</h2>
+                  <p>rejoindre la bonne cause</p>
+                  <h2>Le changement que nous devons réaliser</h2>
                 </div>
                 <ul class="heart">
-                  <li><i class="fa-solid fa-heart pe-3"></i>Start New Campaign</li>
-                  <li class="pt-3"><i class="fa-solid fa-heart pe-3"></i>How change happens</li>
-                  <li class="pt-3"><i class="fa-solid fa-heart pe-3"></i>Teach your kids about giving</li>
-                  <li class="pt-3"><i class="fa-solid fa-heart pe-3"></i>Make the difference</li>
-                  <li class="pt-3"><i class="fa-solid fa-heart pe-3"></i>Take part in a charity run</li>
-                  <li class="pt-3"><i class="fa-solid fa-heart pe-3"></i>Get involved with Decembeard</li>
+                  <li><i class="fa-solid fa-heart pe-3"></i>Démarrer une nouvelle campagne</li>
+                  <li class="pt-3"><i class="fa-solid fa-heart pe-3"></i>Comment le changement se produit</li>
+                  <li class="pt-3"><i class="fa-solid fa-heart pe-3"></i>Apprenez aux autres à donner</li>
+                  <li class="pt-3"><i class="fa-solid fa-heart pe-3"></i>Fais la différence</li>
+                  <li class="pt-3"><i class="fa-solid fa-heart pe-3"></i>Participez à une course de notre ONG</li>
+                  <li class="pt-3"><i class="fa-solid fa-heart pe-3"></i>Impliquez-vous avec tout votre coeur</li>
                 </ul>
               </div>
             </div>
@@ -639,12 +637,12 @@
         <div class="container">
           <div class="environment">
             <div class="heading">
-              <h2>Get The <span>Latest Environment </span>News In The World</h2>
+              <h2>Obtenir les <span>Dernieres </span>Nouvelles dans le monde sur la nature</h2>
             </div>
-            <p>You may unsubscribe at any time and we will not share your email address with any 3rd party.</p>
+            <p>Vous pouvez vous désinscrire à tout moment et nous ne partagerons pas votre adresse e-mail avec des tiers.</p>
             <form>
               <input type="text" name="email" placeholder="Enter your email address...">
-              <button class="btn"><span>Subscribe</span></button>
+              <button class="btn"><span>S'abonner</span></button>
             </form>
           </div>
         </div>
@@ -655,51 +653,40 @@
             <div class="slider-for testimonials" style="background-image: url(assets/img/patrin.jpg);">
               <div class="slider-for__item ex1">
                 <img alt="comma" src="assets/img/comma.png">
-                <h4>Duis sed odio sit amet nibh vulputate cursus a acc msan 
-                    ipsuy veli Nam nec tellus a odio tincursus Duis sed odio 
-                    ate cursus a acc msan ipsuy veli.</h4>
-                  <h3>Jonnie Thomas</h3>
-                  <span>California, UAE</span>
+                <h4>Cette ONG est une initiative qui garantisse la survie de l'humanité.</h4>
+                  <h3>John Kan</h3>
+                  <span>Kindu, Kongo</span>
               </div>
               <div class="slider-for__item ex1">
                 <img alt="comma" src="assets/img/comma.png">
-                <h4>Duis sed odio sit amet nibh vulputate cursus a acc msan 
-                    ipsuy veli Nam nec tellus a odio tincursus Duis sed odio 
-                    ate cursus a acc msan ipsuy veli.</h4>
-                  <h3>Jonnie Thomas</h3>
-                  <span>California, USA</span>
+                <h4>Si toute la population adherer à cette ONG pour faire avancer la garantie de l'humanité.</h4>
+                  <h3>Thomas Naweji</h3>
+                  <span>L'shi, H-Katanga</span>
               </div>
               <div class="slider-for__item ex1">
                 <img alt="comma" src="assets/img/comma.png">
-                <h4>Duis sed odio sit amet nibh vulputate cursus a acc msan 
-                    ipsuy veli Nam nec tellus a odio tincursus Duis sed odio 
-                    ate cursus a acc msan ipsuy veli.</h4>
-                  <h3>Jonnie Thomas</h3>
-                  <span>California, USA</span>
+                <h4>Contribuons avec tout ce que nous avions pour soutenir cette ONG protectrice.</h4>
+                  <h3>Jonnie Rish</h3>
+                  <span>Bukavu, Sud Kivu</span>
               </div>
               <div class="slider-for__item ex1">
                 <img alt="comma" src="assets/img/comma.png">
-                <h4>Duis sed odio sit amet nibh vulputate cursus a acc msan 
-                    ipsuy veli Nam nec tellus a odio tincursus Duis sed odio 
-                    ate cursus a acc msan ipsuy veli.</h4>
-                  <h3>Jonnie Thomas</h3>
-                  <span>California, USA</span>
+                <h4>Le climat est un danger pouvant detruire toute l'humanité. 
+                  C'est pourquoi chacun doit voir comment contribuer à cette oeuvre majeur</h4>
+                  <h3>Jean Tshika</h3>
+                  <span>Kolwezi, Lualaba</span>
               </div>
               <div class="slider-for__item ex1">
                 <img alt="comma" src="assets/img/comma.png">
-                <h4>Duis sed odio sit amet nibh vulputate cursus a acc msan 
-                    ipsuy veli Nam nec tellus a odio tincursus Duis sed odio 
-                    ate cursus a acc msan ipsuy veli.</h4>
-                  <h3>Jonnie Thomas</h3>
-                  <span>California, USA</span>
+                <h4>Si toute la population adherer à cette ONG pour faire avancer la garantie de l'humanité.</h4>
+                  <h3>Thomas Naweji</h3>
+                  <span>L'shi, H-Katanga</span>
               </div>
               <div class="slider-for__item ex1">
                 <img alt="comma" src="assets/img/comma.png">
-                <h4>Duis sed odio sit amet nibh vulputate cursus a acc msan 
-                    ipsuy veli Nam nec tellus a odio tincursus Duis sed odio 
-                    ate cursus a acc msan ipsuy veli.</h4>
-                  <h3>Jonnie Thomas</h3>
-                  <span>California, USA</span>
+                <h4>Contribuons avec tout ce que nous avions pour soutenir cette ONG protectrice.</h4>
+                  <h3>Jonnie Rish</h3>
+                  <span>Bukavu, Sud Kivu</span>
               </div>
             </div>
             <div class="slider-nav">
@@ -728,8 +715,8 @@
       <section class="gap">
         <div class="container">
           <div class="heading two pb-5">
-            <h2 class="p-0">Charity Gifts</h2>
-            <p>consulting with creative, customized end-to-end solutions</p>
+            <h2 class="p-0">Cadeaux de charité</h2>
+            <p>conseil avec des solutions créatives et personnalisées de bout en bout</p>
           </div>
           <div class="row gifts-slids owl-carousel owl-theme">
             <div class="col-lg-12 item">
@@ -745,15 +732,15 @@
                     <h6>15</h6>
                   </div>
                   <div class="add-hover">
-                    <a href="#"><span>Add to Cart</span></a>
+                    <a href="#"><span>Ajouter au panier</span></a>
                   </div>
                   <a href="javascript:void(0)"><i class="fa-solid fa-basket-shopping"></i></a>
                   </div>
               </div>
               <div class="gifts-data">
-                <p>Donate, Gaming</p>
-                <a href="product-details.html"><h5>Men White T-Shirt</h5></a>
-                <h6>$70.00  <del>$120.00</del></h6>
+                <p>Faire un don, Jeux</p>
+                <a href="product-details.html"><h5>T-shirt Blanc Homme</h5></a>
+                <h6>70.00$  <del>120.00$</del></h6>
               </div>
             </div>
             <div class="col-lg-12 item">
@@ -769,15 +756,15 @@
                     <h6>15</h6>
                   </div>
                   <div class="add-hover">
-                    <a href="#"><span>Add to Cart</span></a>
+                    <a href="#"><span>Ajouter au panier</span></a>
                   </div>
                   <a href="javascript:void(0)"><i class="fa-solid fa-basket-shopping"></i></a>
                   </div>
               </div>
               <div class="gifts-data">
-                <p>Donate, Gaming</p>
-                <a href="product-details.html"><h5>Used Children's Toys</h5></a>
-                <h6>$70.00  <del>$120.00</del></h6>
+                <p>Faire un don, Jeux</p>
+                <a href="product-details.html"><h5>Jouets d'occasion pour enfants</h5></a>
+                <h6>70.00 $ <del>120.00$</del></h6>
               </div>
             </div>
             <div class="col-lg-12 item">
@@ -793,15 +780,15 @@
                     <h6>15</h6>
                   </div>
                   <div class="add-hover">
-                    <a href="#"><span>Add to Cart</span></a>
+                    <a href="#"><span>Ajouter au panier</span></a>
                   </div>
                   <a href="javascript:void(0)"><i class="fa-solid fa-basket-shopping"></i></a>
                   </div>
               </div>
               <div class="gifts-data">
-                <p>Donate, Gaming</p>
-                <a href="product-details.html"><h5>Support Donation Box</h5></a>
-                <h6>$70.00  <del>$120.00</del></h6>
+                <p>Faire un don, Jeux</p>
+                <a href="product-details.html"><h5>Jouets d'occasion pour enfants</h5></a>
+                <h6>70.00 $ <del>120.00$</del></h6>
               </div>
             </div>
             <div class="col-lg-12 item">
@@ -817,15 +804,15 @@
                     <h6>15</h6>
                   </div>
                   <div class="add-hover">
-                    <a href="#"><span>Add to Cart</span></a>
+                    <a href="#"><span>Ajouter au panier</span></a>
                   </div>
                   <a href="javascript:void(0)"><i class="fa-solid fa-basket-shopping"></i></a>
                   </div>
               </div>
               <div class="gifts-data">
-                <p>Donate, Gaming</p>
-                <a href="product-details.html"><h5>New Cap Hat Men</h5></a>
-                <h6>$70.00  <del>$120.00</del></h6>
+                <p>Faire un don, Jeux</p>
+                <a href="product-details.html"><h5>Jouets d'occasion pour enfants</h5></a>
+                <h6>70.00 $ <del>120.00$</del></h6>
               </div>
             </div>
             <div class="col-lg-12 item">
@@ -841,15 +828,15 @@
                     <h6>15</h6>
                   </div>
                   <div class="add-hover">
-                    <a href="#"><span>Add to Cart</span></a>
+                    <a href="#"><span>Ajouter au panier</span></a>
                   </div>
                   <a href="javascript:void(0)"><i class="fa-solid fa-basket-shopping"></i></a>
                   </div>
               </div>
               <div class="gifts-data">
-                <p>Donate, Gaming</p>
-                <a href="product-details.html"><h5>Men White T-Shirt</h5></a>
-                <h6>$70.00  <del>$120.00</del></h6>
+                <p>Faire un don, Jeux</p>
+                <a href="product-details.html"><h5>Jouets d'occasion pour enfants</h5></a>
+                <h6>70.00 $ <del>120.00$</del></h6>
               </div>
             </div>
           </div>
@@ -859,8 +846,8 @@
         <div class="container">
           <div class="heading">
             <img alt="icon" src="assets/img/logo-icon.png">
-            <p>working on charity</p>
-            <h2>Recent Articles</h2>
+            <p>travailler sur l'environment</p>
+            <h2>Articles récents</h2>
           </div>
           <div class="row">
             <div class="offset-xl-1 col-xl-10">
@@ -869,10 +856,9 @@
                 <div class="article-data">
                   <h4>24<span>Mar, 2023</span></h4>
                   <div>
-                    <h5>By NicDark   <span class="px-3">-</span>    1 Comments</h5>
-                    <a href="blog-details-1.html"><h3>The perfect way to end your campaign</h3></a>
-                    <h6>Duis sed odio sit amet nibh vulputa te rsus a amet mau accumsan ip suy veliu
-                        am nec tel</h6>
+                    <h5>Par Jack P  <span class="px-3">-</span>    9 Commentaires</h5>
+                    <a href=""><h3>Le moyen idéal pour terminer votre campagne</h3></a>
+                    <h6>Investir dans le climat pour proteger l'humanité dans tout le monde</h6>
                   </div>
                 </div>
               </div>
@@ -880,18 +866,17 @@
             <div class="offset-xl-1 col-xl-10 mt-5">
               <div class="article two">
                 <div class="article-data">
-                  <h4>24<span>Mar, 2023</span></h4>
+                  <h4>10<span>Mai, 2023</span></h4>
                   <div>
-                    <h5>By NicDark   <span class="px-3">-</span>    1 Comments</h5>
-                    <a href="blog-details-1.html"><h3>The perfect way to end your campaign</h3></a>
-                    <h6>Duis sed odio sit amet nibh vulputa te rsus a amet mau accumsan ip suy veliu
-                        am nec tel</h6>
+                    <h5>Par Rochap   <span class="px-3">-</span>    21 Commentaires</h5>
+                    <a href=""><h3>L'inconvenient de la deforrestation sur l'humanité</h3></a>
+                    <h6>Dans le monde la deforrestation est devenue une pratique repetitive mais à un risque mondiale</h6>
                   </div>
                 </div>
                 <img alt="article-img" src="https://via.placeholder.com/520x370">
               </div>
               <div class="button-gap">
-                <a href="#" class="btn mt-5"><span>New All Posts</span></a>
+                <a href="#" class="btn mt-5"><span>Voir tous les articles</span></a>
               </div>
             </div>
           </div>
