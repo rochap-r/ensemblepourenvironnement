@@ -90,7 +90,7 @@
                         <div class="contact-map">
                             <div class="footer-logo-one">
                                 <a href="{{ route('home') }}"><img alt="logo" width="360" 
-                                        src="{{ asset('assets/img/logo-w.png') }}"></a>
+                                        src="{{ asset('assets/img/logo-contact.png') }}"></a>
                             </div>
                         </div>
                     </div>
