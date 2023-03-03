@@ -183,7 +183,9 @@
         <div class="row align-items-center">
           <div class="col-xl-4 col-md-6">
             <div class="footer-logo-one">
-              <a href="{{route('home') }}"><img alt="logo" src="{{ asset('assets/img/logo-w.png') }}"></a>
+              <a href="{{route('home') }}">
+                <img alt="logo" src="{{ asset('assets/img/logo-w.png') }}">
+              </a>
             </div>
           </div>
           <div class="col-xl-3 col-md-6">
