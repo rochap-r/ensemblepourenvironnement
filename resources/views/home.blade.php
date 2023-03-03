@@ -311,7 +311,7 @@
           <div class="row">
             <div class="col-lg-4 col-md-6">
               <div class="nonprofit">
-                <img alt="shaps" src="assets/img/shaps-1.png">
+                <img alt="shaps" src="{{asset('assets/img/shaps-1.png')}}">
                 <p>Les partenaires à but non lucratif créent l'accès à la plantation de </p>
                 <div class="justify-content-center d-flex align-items-center">
                   <div id="odometer" class="odometer odometer1" data-id="200000">0</div>
@@ -322,7 +322,7 @@
             </div>
             <div class="col-lg-4 col-md-6">
               <div class="nonprofit">
-                <img alt="shaps" src="assets/img/shaps-2.png">
+                <img alt="shaps" src="{{asset('assets/img/shaps-2.png')}}">
                 <p>Nos partenaires construisent l'apprentissage environnemental</p>
                 <div class="justify-content-center d-flex align-items-center">
                   <div id="odometer2" class="odometer odometer2" data-id="100">0</div><span>M</span>
@@ -332,7 +332,7 @@
             </div>
             <div class="col-lg-4 col-md-6">
               <div class="nonprofit">
-                <img alt="shaps" src="assets/img/shaps-3.png">
+                <img alt="shaps" src="{{asset('assets/img/shaps-3.png')}}">
                 <p>Investir dans la nature Génère un rendement, protegeant</p>
                 <div class="justify-content-center d-flex align-items-center">
                   <span>$</span><div id="odometer3" class="odometer odometer3" data-id="1">0</div><span>B+</span>
@@ -346,7 +346,7 @@
       <section class="gap section-recent-causes">
         <div class="container">
           <div class="heading">
-            <img alt="icon" src="assets/img/logo-icon.png">
+            <img alt="icon" src="{{asset('assets/img/logo-icon.png')}}">
             <p>travailler sur la Nature</p>
             <h2>Causes récentes</h2>
           </div>
