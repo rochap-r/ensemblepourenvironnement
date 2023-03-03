@@ -312,9 +312,11 @@
 <script src="{{ asset('assets/js/odometer.js') }}"></script>
 <script>
   setTimeout(function(){
-    odometer.innerHTML = jQuery('.odometer1').data("id");
-    odometer2.innerHTML = jQuery('.odometer2').data("id");
-    odometer3.innerHTML = jQuery('.odometer3').data("id");
+    if(odometer){
+      odometer.innerHTML = jQuery('.odometer1').data("id");
+      odometer2.innerHTML = jQuery('.odometer2').data("id");
+      odometer3.innerHTML = jQuery('.odometer3').data("id");
+    }
   }, 2000);
 </script>
 <script src="{{ asset('assets/js/custom.js') }}"></script>

@@ -2,7 +2,7 @@
 @extends('layouts.main')
 
     <!-- title section -->
-    @section('title','Lecture d\'un article')
+    @section('title','Flore Epicentre de la vie')
 
     <!-- content section -->
     @section('content')
@@ -11,15 +11,15 @@
     <section class="page-title-area" style="background-image:url(https://via.placeholder.com/1920x430)">
         <div class="container">
           <div class="title-area-data">
-            <h2>Blog Details</h2>
-            <p>Organisations committed to ending poverty worldwide.</p>
+            <h2>Actualités</h2>
+            <p>Organisation engagée pour mettre fin au desastre environnemental dans le monde.</p>
           </div>
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="index.html">Home</a>
+              <a href="{{ route('home') }}">Accueil</a>
             </li>
-              <li class="breadcrumb-item active" aria-current="page">our blog</li>
-              <li class="breadcrumb-item active" aria-current="page">Blog Details</li>
+              <li class="breadcrumb-item active" aria-current="page">Actualités</li>
+              <li class="breadcrumb-item active" aria-current="page">Détail</li>
           </ol>
         </div>
       </section>
@@ -35,10 +35,10 @@
                     <div class="article">
                       <h4>24<span>Mar, 2022</span></h4>
                     </div>
-                    <h2>Chris Sibbald talks about taking the Global Leadership Lunch online</h2>
+                    <h2>Flore Epicentre de la vie</h2>
                     <div class="meta-info">
                       <ul>
-                        <li><img alt="img" src="https://via.placeholder.com/60x60"><p>Posted by Thomas Smith</p></li>
+                        <li><img alt="img" src="https://via.placeholder.com/60x60"><p>Publié par Artur J</p></li>
                         <li><i class="fa-solid fa-eye"></i><h6>50K</h6>
                         <li><i class="fa-solid fa-message"></i><h6>50K</h6>
                       </ul>
@@ -72,14 +72,14 @@
                         c1.048-0.074,1.858-0.945,1.858-1.995V2.002C90.17,1.457,89.947,0.935,89.553,0.556z"/>
                       </svg>
                     </i>
-                      <h3>There is obviously a lot of uncertainty but that doesn’t have to be a scary thing, as the great Yogi Berra said,</h3>
+                      <h3>Il y a évidemment beaucoup d'incertitude mais cela ne doit pas être une chose effrayante, comme l'a dit le grand Yogi Berra,</h3>
                     </div>
                     <p class="pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nise cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <ul class="team-list">
-                    <li><i class="fa-regular fa-circle-check"></i>The crisis has brought businesses <li><i class="fa-regular fa-circle-check"></i>closer, as colleagues engage</li>
-                    <li><i class="fa-regular fa-circle-check"></i>Pace of change unheard of pre-pandemic.</li>
-                    <li><i class="fa-regular fa-circle-check"></i>Leadership in the new working environment</li>
-                    <li><i class="fa-regular fa-circle-check"></i>Business represents, be willing to show vulnerability</li>
+                    <li><i class="fa-regular fa-circle-check"></i>La crise a amené les entreprises <li><i class="fa-regular fa-circle-check"></i>plus près, à mesure que les collègues s'engagent</li>
+                    <li><i class="fa-regular fa-circle-check"></i>Rythme de changement sans précédent avant la saison de pluie.</li>
+                    <li><i class="fa-regular fa-circle-check"></i>Leadership dans le nouvel environnement de travail</li>
+                    <li><i class="fa-regular fa-circle-check"></i>L'entreprise représente, être prêt à montrer sa vulnérabilité</li>
                     </ul>
                     <div class="row pb-lg-5">
                       <div class="col-sm-6 hoverimg">
@@ -96,21 +96,13 @@
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab
                         ore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ni
-                        si ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esculpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div class="post-tags">
-                      <h6>Post Tags:</h6>
-                      <ul>
-                        <li><a href="#">Welfair Project</a></li>
-                        <li><a href="#">Kids</a></li>
-                        <li><a href="#">Donation</a></li>
-                        <li><a href="#">Fundraise</a></li>
-                      </ul>
-                    </div>
+                        si ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esculpa qui officia deserunt mollit anim id est laborum.
+                      </p>
                     <div class="about-the-theodore">
                       <img alt="img" src="https://via.placeholder.com/210x219">
                       <div class="ms-lg-5">
                         <div class="d-flex align-items-center mb-3">
-                          <h3>Willimes Dom</h3>
+                          <h3>Artur J</h3>
                           <ul class="social-media-icon full">
                             <li>
                               <a href="#">
@@ -127,15 +119,15 @@
                       </div>
                     </div>
                     <div class="comment">
-                      <h3>02 Comments</h3>
+                      <h3>02 Commentaires</h3>
                       <ul>
                         <li class="single-comment">
                           <img alt="img" src="https://via.placeholder.com/120x120">
                           <a href="#">reply</a>
                           <div class="ps-lg-4">
                             <div class="d-flex align-items-center">
-                              <h4>Valkor Smith</h4>
-                              <span>January 7, 2023 at 12:21 am </span>
+                              <h4>Franck Koj</h4>
+                              <span>7 janvier 2023 à 00:21 </span>
                               </div>
                               <p>Integer sollicitudin ligula non enim sodales, non lacinia Sewid commodo
                                 are risus in euismod varius nullam feugiat ultrices.</p>
@@ -146,8 +138,8 @@
                           <a href="#">reply</a>
                           <div class="ps-lg-4">
                             <div class="d-flex align-items-center">
-                              <h4>Willimes Dom</h4>
-                              <span>January 7, 2023 at 12:21 am </span>
+                              <h4>Artur J</h4>
+                              <span>7 janvier 2023 à 01:21 </span>
                               </div>
                               <p>Integer sollicitudin ligula non enim sodales, non lacinia Sewid commodo
                                 are risus in euismod varius nullam feugiat ultrices.</p>
@@ -156,20 +148,20 @@
                       </ul>
                     </div>
                     <div class="comment">
-                      <h3>Leave a Comment</h3>
+                      <h3>Laissez un commentaire</h3>
                       <form class="leave-comment">
                         <div class="row">
                           <div class="col-lg-6">
-                            <input type="text" name="name" placeholder="Full Name">
+                            <input type="text" name="name" placeholder="Nom et prénom">
                           </div>
                           <div class="col-lg-6">
-                            <input type="text" name="Email" placeholder="Email Id">
+                            <input type="text" name="Email" placeholder="Email">
                           </div>
                         </div>
-                        <input type="text" name="Subject" placeholder="Subject">
-                        <textarea placeholder="Your Message"></textarea>
+                        <input type="text" name="Subject" placeholder="Sujet">
+                        <textarea placeholder="Votre Message"></textarea>
                         <button class="btn">
-                          <span>Post Comment</span>
+                          <span>Poster un commentaire</span>
                         </button>
                       </form>
                     </div>
