@@ -1,25 +1,55 @@
-<x-guest-layout>
-    <div class="mb-4 text-sm text-gray-600 dark:text-gray-400">
-        {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Kodinger">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Réstauration du mot de passe</title>
+    <link rel="icon" href="{{ asset('logo/icone.png') }}" type="image/png" />
+    <link rel="stylesheet" href="{{ asset('auth/bootstrap/css/bootstrap.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('auth/css/my-login.css')}}">
+</head>
+<body class="my-login-page">
+<section class="h-100">
+    <div class="container h-100">
+        <div class="row justify-content-md-center align-items-center h-100">
+            <div class="card-wrapper">
+
+                <div class="cardx fat">
+                    <div class="text-center">
+                        <a href="{{route('home')}}" class="navbar-brand navbar-brand-autodark">
+                            <img src="{{asset('assets/img/logo.png')}}" alt="" height="140">
+                        </a>
+                        <h4 class="card-title">Restaurez votre mot de passe</h4>
+                    </div>
+                    <div class="card-body">
+                        <form method="POST" class="my-login-validation" novalidate="" action="{{ route('password.email') }}">
+                            @csrf
+
+                            @if (session('status'))
+                                <div class="alert alert-success">
+                                    Nous avons envoyé votre lien de réinitialisation de mot de passe par e-mail cliquez sur le bouton!
+                                </div>
+                            @endif
+                            <div class="form-group">
+                                <label for="email">Adresse e-mail</label>
+                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="Entrer votre Email">
+                                <span class="text-danger">@error('email'){{ $message }} @enderror</span>
+                            </div>
+
+                            <div class="form-group m-0">
+                                <button type="submit" class="btn btn-primary btn-block">
+                                    Envoyer le lien du mot de passe
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</section>
 
-    <!-- Session Status -->
-    <x-auth-session-status class="mb-4" :status="session('status')" />
 
-    <form method="POST" action="{{ route('password.email') }}">
-        @csrf
-
-        <!-- Email Address -->
-        <div>
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
-        </div>
-
-        <div class="flex items-center justify-end mt-4">
-            <x-primary-button>
-                {{ __('Email Password Reset Link') }}
-            </x-primary-button>
-        </div>
-    </form>
-</x-guest-layout>
+</body>
+</html>

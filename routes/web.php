@@ -25,9 +25,7 @@ Route::get('/about', [AboutController::class,'index'])->name('about');
 Route::get('/blog/index', [BlogController::class,'index'])->name('blog.index');
 Route::get('/blog/show', [BlogController::class,'show'])->name('blog.show');
 
-Route::get('/admin', function () {
-    return view('admin.index');
-})->middleware(['auth', 'verified'])->name('admin');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -36,3 +34,7 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::get('/admins', function () {
+    return view('admin.index');
+})->middleware(['auth', 'verified'])->name('admin');

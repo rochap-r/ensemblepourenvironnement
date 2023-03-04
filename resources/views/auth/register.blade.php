@@ -1,52 +1,108 @@
-<x-guest-layout>
-    <form method="POST" action="{{ route('register') }}">
-        @csrf
+<!DOCTYPE html>
+<html lang="en">
 
-        <!-- Name -->
-        <div>
-            <x-input-label for="name" :value="__('Name')" />
-            <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
-            <x-input-error :messages="$errors->get('name')" class="mt-2" />
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Kodinger">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Inscription</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/favicon/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('assets/favicon/site.webmanifest') }}">
+    <link rel="stylesheet" href="{{ asset('auth/bootstrap/css/bootstrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('auth/css/my-login.css') }}">
+</head>
+
+<body class="my-login-page">
+    <section class="h-100">
+        <div class="container h-100">
+            <div class="row justify-content-md-center h-100">
+                <div class="card-wrapper">
+
+                    <div class="cardx fat mt-2">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <a href="{{ route('home') }}" class="navbar-brand navbar-brand-autodark">
+                                    <img src="{{ asset('assets/img/logo.png') }}" alt="" height="140">
+                                </a>
+                                <h4 class="card-title">Inscrivez-vous</h4>
+                            </div>
+                            <form method="POST" class="my-login-validation" autocomplete="off"
+                                action="{{ route('register') }}">
+                                @csrf
+                                <div class="form-group">
+                                    <label for="name">Nom</label>
+                                    <input id="name" type="text" class="form-control" name="name" autofocus
+                                        placeholder="Entrez le nom" value="{{ old('name') }}">
+                                    <span class="text-danger">
+                                        @error('name')
+                                            {{ $message }}
+                                        @enderror
+                                    </span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email" >
+                                        E-mail 
+                                        <span class="float-right" > Avez-vous déjà un compte?
+                                            <a href="{{ route('login') }}">
+                                                Connexion
+                                            </a>
+                                        </span>
+                                    </label>
+
+                                        
+                                        
+                                    <input id="email" type="email" class="form-control" name="email"
+                                        placeholder="Entrez l'e-mail" value="{{ old('email') }}">
+                                    <span class="text-danger">
+                                        @error('email')
+                                            {{ $message }}
+                                        @enderror
+                                    </span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="password">Mot de passe</label>
+                                    <input id="password" type="password" class="form-control" name="password" data-eye
+                                        placeholder="Entrer le mot de passe">
+                                    <span class="text-danger">
+                                        @error('password')
+                                            {{ $message }}
+                                        @enderror
+                                    </span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password-confirm">Confirmez le mot de passe</label>
+                                    <input id="password-confirm" type="password" class="form-control"
+                                        name="password_confirmation" required data-eye
+                                        placeholder="Entrez le mot de passe de confirmation">
+                                    <span class="text-danger">
+                                        @error('password_confirmation')
+                                            {{ $message }}
+                                        @enderror
+                                    </span>
+
+                                </div>
+
+                                <div class="form-group m-0">
+                                    <button type="submit" class="btn btn-primary btn-block">
+                                        S'inscrire
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
+    </section>
+    <script src="{{ asset('blog_template/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('auth/bootstrap/js/popper.js') }}"></script>
+    <script src="{{ asset('auth/bootstrap/js/bootstrap.js') }}"></script>
+    <script src="{{ asset('auth/js/my-login.js') }}"></script>
+</body>
 
-        <!-- Email Address -->
-        <div class="mt-4">
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
-        </div>
-
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
-
-            <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="new-password" />
-
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-        </div>
-
-        <!-- Confirm Password -->
-        <div class="mt-4">
-            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
-
-            <x-text-input id="password_confirmation" class="block mt-1 w-full"
-                            type="password"
-                            name="password_confirmation" required autocomplete="new-password" />
-
-            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
-        </div>
-
-        <div class="flex items-center justify-end mt-4">
-            <a class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800" href="{{ route('login') }}">
-                {{ __('Already registered?') }}
-            </a>
-
-            <x-primary-button class="ml-4">
-                {{ __('Register') }}
-            </x-primary-button>
-        </div>
-    </form>
-</x-guest-layout>
+</html>

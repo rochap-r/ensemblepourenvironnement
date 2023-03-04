@@ -1,39 +1,80 @@
-<x-guest-layout>
-    <form method="POST" action="{{ route('password.store') }}">
-        @csrf
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Kodinger">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Réinitialisation du mot de passe</title>
+    <link rel="icon" href="{{ asset('logo/icone.png') }}" type="image/png" />
+    <link rel="stylesheet" href="{{ asset('auth/bootstrap/css/bootstrap.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('auth/css/my-login.css')}}">
+</head>
+<body class="my-login-page">
+<section class="h-100">
+    <div class="container h-100">
+        <div class="row justify-content-md-center align-items-center h-100">
+            <div class="card-wrapper">
+                <div class="cardx fat">
+                    <div class="card-body">
+                        <div class="text-center mt-4">
+                            <a href="{{route('home')}}" class="navbar-brand navbar-brand-autodark">
+                                <img src="{{asset('assets/img/logo.png')}}" alt="" height="140">
+                            </a>
+                            <h4 class="card-title">Réinitialisez le mot de passe</h4>
+                        </div>
+                        <form method="POST" class="my-login-validation" novalidate="" action="{{ route('password.update') }}">
+                            @csrf
+                            <input type="hidden" name="token" value="{{ $request->route('token')}}">
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input id="email" type="email" class="form-control" name="email" placeholder="Adresse e-mail" value="{{ old('email', $request->email) }}">
+                                <span class="text-danger">@error('email'){{$message}} @enderror</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">nouveau mot de passe</label>
+                                <input id="password" type="password" class="form-control" name="password" placeholder="Entrez un nouveau mot de passe">
+                                <span class="text-danger">@error('password'){{$message}}@enderror</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="password-confirm">Confirmez le mot de passe</label>
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Entrez le mot de passe de confirmation">
+                                <span class="text-danger">@error('password_confirmation'){{$message}} @enderror</span>
+                            </div>
 
-        <!-- Password Reset Token -->
-        <input type="hidden" name="token" value="{{ $request->route('token') }}">
-
-        <!-- Email Address -->
-        <div>
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email', $request->email)" required autofocus autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+                            <div class="form-group m-0">
+                                <button type="submit" class="btn btn-primary btn-block">
+                                    Réinitialiser le mot de passe
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <p>
+                                    <small class="block">&copy;
+                                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                                        Tous les droits sont réservés | créé avec
+                                        <i class="icon-heart text-danger" aria-hidden="true"></i>
+                                        par
+                                        <a href="{{ route('about')}}" target="_blank" class="text-primary">actu-soft</a>
+                                    </small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+</section>
 
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
-            <x-text-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-        </div>
-
-        <!-- Confirm Password -->
-        <div class="mt-4">
-            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
-
-            <x-text-input id="password_confirmation" class="block mt-1 w-full"
-                                type="password"
-                                name="password_confirmation" required autocomplete="new-password" />
-
-            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
-        </div>
-
-        <div class="flex items-center justify-end mt-4">
-            <x-primary-button>
-                {{ __('Reset Password') }}
-            </x-primary-button>
-        </div>
-    </form>
-</x-guest-layout>
+<script src="{{ asset('blog_template/js/jquery.min.js') }}"></script>
+<script src="{{ asset('auth/bootstrap/js/popper.js')}}"></script>
+<script src="{{ asset('auth/bootstrap/js/bootstrap.js')}}"></script>
+<script src="{{ asset('auth/js/my-login.js')}}"></script>
+</body>
+</html>
