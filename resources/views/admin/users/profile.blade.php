@@ -15,7 +15,7 @@
                         <a href="#tabs-infos" class="nav-link active" data-bs-toggle="tab">Informations Personnelles</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#tabs-security" class="nav-link" data-bs-toggle="tab">sécurité</a>
+                        <a href="#tabs-security" class="nav-link" data-bs-toggle="tab">Sécurité</a>
                     </li>
                 </ul>
             </div>
@@ -29,8 +29,8 @@
                     </div>
                     <div class="tab-pane" id="tabs-security">
                         <h4>Sécurité</h4>
-                        <div>Fringilla egestas nunc quis tellus diam rhoncus ultricies tristique enim at diam, sem nunc
-                            amet, pellentesque id egestas velit sed
+                        <div>
+                        @livewire('profile-password')
                         </div>
                     </div>
                 </div>
