@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'ONG Ensemble Pour L\'Environnement') </title>
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/favicon/apple-touch-icon.png') }}">
@@ -110,6 +111,9 @@
                                 </li>
                                 <li>
                                     <a href="#"><i class="fab fa-youtube icon"></i></a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('admins.index') }}"><i class="fab fa-square icon"></i></a>
                                 </li>
                             </ul>
                         </div>

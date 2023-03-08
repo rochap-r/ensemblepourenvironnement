@@ -1,11 +1,13 @@
 <?php
 
-use App\Http\Controllers\AboutController;
-use App\Http\Controllers\Blog\BlogController;
-use App\Http\Controllers\ContactController;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Blog\BlogController;
+use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\UsersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,6 +37,12 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/admins', function () {
-    return view('admin.index');
-})->middleware(['auth', 'verified'])->name('admin');
+/*ADMIN ROUTES */
+Route::prefix('admins')->name('admins.')->middleware(['auth','verified'])->group(function(){
+    Route::get('/',[AdminController::class,'index'])->name('index');
+    Route::get('/profile',[UsersController::class,'profile'])->name('users.profile');
+});
+
+//Route::get('/admins', function () {
+  //  return view('admin.index');
+//})->middleware(['auth', 'verified'])->name('admin');
