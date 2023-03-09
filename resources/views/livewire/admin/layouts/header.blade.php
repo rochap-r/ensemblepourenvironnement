@@ -70,12 +70,12 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> 
               </div>
             </div>
             <div class="nav-item dropdown">
               <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
-                <span class="avatar avatar-sm" style="background-image: url({{asset('admin/static/avatars/000m.jpg')}})"></span>
+                <span class="avatar avatar-sm" style="background-image: url({{ $user->image ? asset('storage/'.$user->image->path) : asset('placeholders/picture.jpg')}})"></span>
                 <div class="d-none d-xl-block ps-2">
                   <div>{{ $user->name }}</div>
                   <div class="mt-1 small text-muted">{{ $user->phone?? 'Pdt de l\'ONG' }}</div>
@@ -86,7 +86,7 @@
                 <a href="{{route('admins.users.profile')}}" class="dropdown-item">Profile</a>
                 <div class="dropdown-divider"></div>
                 <a href="" class="dropdown-item">Paramètres</a>
-                <a href="" onclick="event.preventDefault(); getElementById('nav-logout-form').submit()" class="dropdown-item">Deconnexion</a>
+                <a href=""  onclick="event.preventDefault(); getElementById('nav-logout-form').submit()" class="dropdown-item">Deconnexion</a>
                 <form id="nav-logout-form" action="{{ route('logout') }}" method="POST">@csrf
                 </form>
               </div>

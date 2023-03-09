@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\Admin\User;
 
 use App\Models\User;
 use Livewire\Component;
@@ -51,6 +51,6 @@ class ProfileInfos extends Component
     }
     public function render()
     {
-        return view('livewire.profile-infos');
+        return view('livewire.admin.user.profile-infos');
     }
 }

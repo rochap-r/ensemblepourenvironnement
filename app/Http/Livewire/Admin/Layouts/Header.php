@@ -1,21 +1,21 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\Admin\Layouts;
 
 use App\Models\User;
 use Livewire\Component;
 
-class Profile extends Component
-{
+class Header extends Component
+{    
     protected $listeners=[
-        'UpdateProfile'=>'$refresh'
-    ];
+        'UpdateHeader'=>'$refresh'
+    ];  
     public $user;
     public function mount(){
         $this->user=User::find(auth()->id());
     }
     public function render()
     {
-        return view('livewire.profile');
+        return view('livewire.admin.layouts.header');
     }
 }

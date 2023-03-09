@@ -20,9 +20,9 @@
     <link rel="manifest" href="{{ asset('assets/favicon/site.webmanifest') }}">
     <title>@yield('title', 'Administration') </title>
     <!-- ijabo CSS pour le tostAlert -->
-    <link href="{{ asset('admin/toastr/toastr.min.css') }}" rel="stylesheet" />
-    <!-- CSS files -->
-    @yield('style')
+    <link href="{{ asset('admin/ijaboCropTool/ijabo.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('admin/ijaboCropTool/ijaboCropTool.min.css') }}" rel="stylesheet" />
+
     @livewireStyles
 
     <link href="{{ asset('admin/dist/css/tabler.min.css') }}" rel="stylesheet" />
@@ -59,6 +59,8 @@
             background: #dc3545 !important;
         }
     </style>
+    <!-- CSS files -->
+    @stack('style')
 
 </head>
 <!--
@@ -94,17 +96,16 @@
 
         </div>
     </div>
-    <!-- plugins JS -->
-    @yield('script')
+
     <!-- ijabo JS et JQ pour le toastAlert -->
-    <script src="{{ asset('admin/toastr/jquery-3.6.3.min.js') }}"></script>
-    <script src="{{ asset('admin/toastr/toastr.min.js') }}"></script>
+    <script src="{{ asset('admin/ijaboCropTool/jquery-3.6.3.min.js') }}"></script>
+    <script src="{{ asset('admin/ijaboCropTool/ijabo.min.js') }}"></script>
+    <script src="{{ asset('admin/ijaboCropTool/ijaboCropTool.min.js') }}"></script>
     @livewireScripts
 
     <!-- ijabo JS et JQ pour le toastAlert -->
     <script>
         window.addEventListener('showToastr', function(event) {
-                toastr.remove()
                 if (event.detail.type === 'info') {
                     toastr.info(event.detail.message);
                 } else if (event.detail.type === 'success') {
@@ -116,6 +117,7 @@
                 } else {
                     return false;
                 }
+                toastr.remove()
             });
     </script>
 
@@ -127,3 +129,5 @@
     <!-- Tabler Core -->
     <script src="{{ asset('admin/dist/js/tabler.min.js') }}" defer></script>
     <script src="{{ asset('admin/dist/js/demo.min.js') }}" defer></script>
+    <!-- plugins JS -->
+    @stack('script')

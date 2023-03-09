@@ -1,11 +1,11 @@
 @extends('admin.layouts.app')
 @section('title', 'Mon Profile')
-@section('style')
+@push('style')
     {{-- CSS complementaires --}}
-@endsection
+@endpush
 
 @section('content')
-    @livewire('profile')
+    @livewire('admin.user.profile')
     <hr>
     <div class="row">
         <div class="card">
@@ -24,13 +24,13 @@
                     <div class="tab-pane active show" id="tabs-infos">
                         <h4>Infos Personnelles</h4>
                         <div>
-                           @livewire('profile-infos')
+                            @livewire('admin.user.profile-infos')
                         </div>
                     </div>
                     <div class="tab-pane" id="tabs-security">
                         <h4>Sécurité</h4>
                         <div>
-                        @livewire('profile-password')
+                            @livewire('admin.user.profile-password')
                         </div>
                     </div>
                 </div>
@@ -38,6 +38,27 @@
         </div>
 
     @endsection
-    @section('script')
-        {{-- JS complementaires --}}
-    @endsection
+    @push('script')
+        <script>
+            $('#changeProfile').ijaboCropTool({
+                preview: '',
+                setRatio: 1,
+                allowedExtensions: ['jpg', 'jpeg', 'png'],
+                buttonsText: ['CROP', 'QUIT'],
+                buttonsColor: ['#30bf7d', '#ee5155', -15],
+                processUrl: '{{ route('admins.users.changePicture') }}',
+                withCSRF: ['_token', '{{ csrf_token() }}'],
+                onSuccess: function(message, element, status) {
+                    //alert(message);
+                    //listeners en ecoute pour l'actualisation de deux endroits ou se trouve les deux pictures
+                    Livewire.emit('UpdateHeader');
+                    Livewire.emit('UpdateProfile');
+                    toastr.success(message)
+                },
+                onError: function(message, element, status) {
+                    //alert(message);
+                    toastr.error(message)
+                }
+            });
+        </script>
+    @endpush

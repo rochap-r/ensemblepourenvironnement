@@ -1,14 +1,13 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\Admin\User;
 
 use App\Models\User;
-use Illuminate\Support\Facades\Hash;
 use Livewire\Component;
+use Illuminate\Support\Facades\Hash;
 
 class ProfilePassword extends Component
-{
-    public $passwordA, $passwordC,$password;
+{ public $passwordA, $passwordC,$password;
 
     public function changePassword(){
         $this->validate([
@@ -56,9 +55,8 @@ class ProfilePassword extends Component
             'message'=>$message
         ]);
     }
-
     public function render()
     {
-        return view('livewire.profile-password');
+        return view('livewire.admin.user.profile-password');
     }
 }

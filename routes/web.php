@@ -41,6 +41,7 @@ require __DIR__.'/auth.php';
 Route::prefix('admins')->name('admins.')->middleware(['auth','verified'])->group(function(){
     Route::get('/',[AdminController::class,'index'])->name('index');
     Route::get('/profile',[UsersController::class,'profile'])->name('users.profile');
+    Route::post('/picture',[UsersController::class,'changePicture'])->name('users.changePicture');
 });
 
 //Route::get('/admins', function () {

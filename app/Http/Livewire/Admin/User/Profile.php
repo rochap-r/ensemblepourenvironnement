@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\Admin\User;
 
 use App\Models\User;
 use Livewire\Component;
 
-class Header extends Component
+class Profile extends Component
 {
     protected $listeners=[
-        'UpdateHeader'=>'$refresh'
+        'UpdateProfile'=>'$refresh'
     ];
     public $user;
     public function mount(){
@@ -16,6 +16,6 @@ class Header extends Component
     }
     public function render()
     {
-        return view('livewire.header');
+        return view('livewire.admin.user.profile');
     }
 }
